@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>news page</title>
+
+    <style>
+
+       *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #bbb;
+        }
+
+        /*Nav bar CSS start*/
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+        }
+
+        li, a, button, .logo{
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: azure;
+            text-decoration: none;
+        }
+        
+        header{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: #bbb;
+            
+        }
+
+        .logo{
+            cursor: pointer;
+            color: azure;
+            margin-right: auto;
+            background-color: rgb(187, 187, 187);
+            border-radius: 10px;
+            border: 1px solid white;
+            padding: 10px;
+        }
+        
+      
+
+        .nav_links{
+            list-style: none;
+        }
+
+        .nav_links li{
+            padding: 0px 20px;
+            display: inline-block;
+        }
+
+        .nav_links li a{
+            transition: all 0.3s ease 0s ;
+        }
+
+        .nav_links li a:hover{
+            color: #0088a9;
+        }
+
+        button{
+            margin-left: 20px;
+            padding: 9px 25px;
+            background-color: #0088a9;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        button:hover{
+            background-color: #bbb;
+            color: #0088a9;
+        }
+
+        h2{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            cursor: pointer;
+            font-family: Montserrat, sans-serif;
+            font-weight: 50px;
+            font-size: 40px;
+            color: azure;
+            text-decoration: none;
+            transition: all 0.9s ease 0s;
+          }
+
+          h2:hover{
+            color: #0088a9;
+        }
+
+        .news {
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+            height: 500px;
+            /* border: 1px solid ; */
+             /*border-radius: 15px; */
+          }
+
+          tr, td {
+            height: 30px;
+            border: .5px solid  ;
+            text-align: center;
+            color: rgb(3, 3, 3);
+          }
+          
+          .licked {
+            margin: auto;
+            width: 40%;
+            cursor: pointer;
+            margin-bottom: 20px;
+          }
+
+          .licked tr td {
+              background-color: #0088a9;
+              color: #bbb;
+              transition: all 0.5s ease 0;
+          }
+          .licked tr td:hover {
+              background-color: #bbb ;
+              color: #0088a9;
+              border-radius: 60%;
+          }
+
+          .licked a{
+              color: rgb(3, 3, 3);
+              background-color: #0088a9;
+              transition: all 0.5s ease 0;
+              cursor: pointer;
+          }
+
+          .licked a:hover{
+              color: #0088a9;
+              background-color: #bbb;
+              
+          }
+
+
+          /* Footer CSS starts here */
+        span{
+          color: #bbb;
+          background-color: #0088a9;
+        }
+
+        .footer{
+          padding: 20px 0;
+          background-color: #0088a9;
+        }
+
+        .footer .socials{
+          text-align: center; 
+        }
+
+        .footer .socials a{
+          font-size: 30px;
+          color: inherit;
+          background-color: #0088a9;
+          width: 40px;
+          height: 40px;
+          line-height: 38px;
+          display: inline-block;
+          text-align: center;
+          border-radius: 50%;
+        }
+
+        .footer ul { 
+          list-style: none;
+          font-size: 40px;
+          text-align: center;
+          background-color: #0088a9;
+        }
+
+        .footer ul li a { 
+          text-decoration: none;
+          background-color: #0088a9;
+        }
+
+        .footer ul li a:hover { 
+          color: #000;
+        }
+
+        .footer ul li {
+          display: inline-block;
+          background-color: #0088a9;
+        }
+
+        .socials{
+          background-color: #0088a9;
+        }
+
+        .footer .socials a:hover{
+          background-color: azure;
+          color: #0088a9;
+        }
+
+        p{
+          font-size: 20px;
+          display: flex;
+          color: #000;
+          justify-content: center;
+          align-items: center;
+          height: 0px;
+          border: none;
+          margin-top: 30px;
+          text-decoration: none; 
+        } 
+
+          input[type=submit] {
+            width: 100%;
+            padding: 12px; 
+            font-size: 20px;
+            background-color: #0088a9;
+            color: white;
+            border: none;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #bbb;
+            color: #0088a9;
+          }
+
+          input[type=toppage] {
+            width: 100%;
+            padding: 10px; 
+            font-size: 20px;
+            text-align: center;
+            background-color: #0088a9;
+            color: white;
+            border: none;
+          }
+          
+          input[type=toppage]:hover {
+            background-color: #bbb;
+            color: #0088a9;
+          }
+         /*BACT TO THE TOP BUTTON  */
+    </style>
+
+</head>
+<body>
+    <!--Header's HTML starts here -->
+
+
+    <header>
+        <div class="logo"><a href="http://127.0.0.1:5500/HomePage.html">L A R I S S A</a></div>
+        <nav>
+            <ul class="nav_links">
+              <li><a href="http://127.0.0.1:5500/AboutPage.html">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/HomePage.html">Headlines</a></li>
+                <li><a href="http://127.0.0.1:5500/newspage.html">News</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="http://127.0.0.1:5500/registerpage.html"><button>Register Now</button></a>
+    </header>
+        
+
+                  <!--Header's HTML ends here -->
+
+
+                  <h2 >The Latest Fashion News</h2>
+                  <main id="news">
+                      <table class="news">
+                          <tbody>
+                              <tr>
+                                  <td><img width="350px" height="250px" src="newsimg1.jpg" alt=""></td>
+                                  <td>Catwalk Crashers at Chanel. Animal Sex at Stella. <br>
+                                    Extinction at Alexander McQueen. <br> Unexpected things are happening in Paris.<br><br> Sat 2021|04|18, 08:19 </td>
+                              </tr>
+
+                              <tr>
+                                <td><img width="350px" height="250px" src="newsimg2.jpg" alt=""></td>
+                                <td>Blood, Money, Oil. And Clothes. <br>
+                                    What else is there to talk about? Balenciaga, <br> Givenchy and Valentino get in on the conversation. <br><br>  Fri 2021|03|26, 09:22 </td>
+                            </tr>
+
+                            <tr>
+                                <td><img width="350px" height="250px" src="newsimg3.jpg" alt=""></td>
+                                <td>Always Well Groomed <br>
+                                    Ghislaine Maxwell looked impeccable. <br> That was the point.<br><br>  Fri 2021|03|19, 23:50 </td>
+                            </tr>
+
+                            <tr>
+                                <td><img width="350px" height="250px" src="newsimg4.jpg" alt=""></td>
+                                <td>'Emily in Paris' Returns, With Even More Fantastical Fashion <br>
+                                    The Netflix show was derided for, among other things, <br> an unrealistic approach to French dressing. What can viewers expect this season?<br><br>  Thu 2021|01|07, 13:06 </td>
+                            </tr>
+                            <tr>
+                                <td><img width="350px" height="250px" src="newsimg5.jpg" alt=""></td>
+                                <td>A CBD-Infused Cream. For My Feet?<br>
+                                    Our reporter hits the fashion week front lines wearing a <br> new cannabis product. And stilettos. <br><br>  Mon 2020|12|14, 09:49 </td>
+                            </tr>
+
+                            <tr>
+                                <td><img width="350px" height="250px" src="newsimg7.jpg" alt=""></td>
+                                <td>2020 Is Coming. How Will It Look?<br> Louis Vuitton has some answers. <br><br>  Wed 2020|11|02, 20:16 </td>
+                            </tr>
+                          </tbody>
+                      </table>
+                  </main>
+
+                  <section >
+                    <table class="licked">
+                        <tr>
+                            <td rowspan="12"><a href="">1</a></td>
+                            <td><a href="">2</a></td>
+                            <td><a href="">3</a></td>
+                            <td><a href="">4</a></td>
+                            <td><a href="">5</a></td>
+                            <td><a href="">6</a></td>
+                            <td><a href="">7</a></td>
+                            <td><a href="">8</a></td>
+                            <td><a href="">9</a></td>
+                            <td><a href="">10</a></td>
+                            <td><a href="">Next</a></td>
+                            <td><a href="">>></a></td>
+                        </tr>
+                    </table>
+                  </section>
+
+
+
+                 <!--Footer's HTML starts here -->
+
+                 <section class="footer">
+
+                    <div class="socials">
+                        <a href="https://www.facebook.com/hugrisse.pambo/about" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+                        <a href="https://www.linkedin.cn/injobs/hp/" class="fa fa-linkedin"></a>
+                        <a href="https://www.instagram.com/hugrisse_dev/" class="fa fa-instagram"></a>
+                      </div>
+                      
+  
+                      <ul class="list">
+                        <li><a href="http://127.0.0.1:5500/AboutPage.html">About Us</a></li>
+                        <li><a href="http://127.0.0.1:5500/HomePage.html">Headlines</a></li>
+                        <li><a href="http://127.0.0.1:5500/newspage.html">News</a></li>
+                      </ul>
+
+                    <p>copyright@2021&ensp;<span>HUGRISSE Web Developer.&ensp;</span> All right reserved.</p><br>
+                    
+                  </section>
+
+                  <div class="toppage">
+                  <a href="http://127.0.0.1:5500/newspage.html"><input type="submit" value="Back To The Top"></a>
+                  </div>
+                    <!--Footer's HTML ends here -->
+</body>
+</html>

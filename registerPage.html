@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>registerpage</title>
+    
+    <style>       
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #bbb;
+    }
+
+    /*Nav bar CSS start*/
+
+    body{
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+    }
+
+    li, a, button, .logo{
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: azure;
+        text-decoration: none;
+    }
+    
+    header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px 10%;
+        background-color: #bbb;
+        
+    }
+
+    .logo{
+        cursor: pointer;
+        color: azure;
+        margin-right: auto;
+        background-color: rgb(187, 187, 187);
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 10px;
+    }
+
+    .nav_links{
+        list-style: none;
+    }
+
+    .nav_links li{
+        padding: 0px 20px;
+        display: inline-block;
+    }
+
+    .nav_links li a{
+        transition: all 0.3s ease 0s ;
+    }
+
+    .nav_links li a:hover{
+        color: #0088a9;
+    }
+
+    button{
+        margin-left: 20px;
+        padding: 9px 25px;
+        background-color: #0088a9;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    button:hover{
+        background-color: #bbb;
+        color: #0088a9;
+    }
+
+        form {
+          border: 3px solid #bbb;
+          font-family: Arial;
+        }
+        
+        .container1 {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #bbb;
+        }
+
+        .container {
+        margin-top: 10px;
+        padding: 20px;
+        background-color: #bbb;
+        }
+        
+        input[type=text], input[type=submit] {
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          background-color: #fff;
+          display: inline-block;
+          border: 1px solid #fff;
+          box-sizing: border-box;
+        }
+        
+        input[type=checkbox] {
+          margin-top: 16px;
+          color: #0088a9;
+        }
+        
+        input[type=submit] {
+          background-color: #0088a9;
+          color: white;
+          border: none;
+        }
+        
+        input[type=submit]:hover {
+          opacity: 0.8;
+        }
+
+        form{
+            margin-top: 50px;
+            margin: auto;
+            width: 70%;
+            padding: 10px;
+        }
+
+        /* Footer CSS starts here */
+        span{
+          color: #bbb;
+          background-color: #0088a9;
+        }
+
+        .footer{
+          padding: 20px 0;
+          background-color: #0088a9;
+        }
+
+        .footer .socials{
+          text-align: center; 
+        }
+
+        .footer .socials a{
+          font-size: 30px;
+          color: inherit;
+          background-color: #0088a9;
+          width: 40px;
+          height: 40px;
+          line-height: 38px;
+          display: inline-block;
+          text-align: center;
+          border-radius: 50%;
+        }
+
+        .footer ul { 
+          list-style: none;
+          font-size: 40px;
+          text-align: center;
+          background-color: #0088a9;
+        }
+
+        .footer ul li a { 
+          text-decoration: none;
+          background-color: #0088a9;
+        }
+
+        .footer ul li a:hover{
+          color: #000;
+        }
+
+
+        .footer ul li {
+          display: inline-block;
+          background-color: #0088a9;
+        }
+
+        .socials{
+          background-color: #0088a9;
+        }
+
+        .footer .socials a:hover{
+          background-color: azure;
+          color: #0088a9;
+        }
+
+        p{
+          font-size: 15px;
+          display: flex;
+          color: #000;
+          justify-content: center;
+          align-items: center;
+          height: 0px;
+          border: none;
+          margin-top: 30px;
+          text-decoration: none; 
+        }
+
+
+          input[type=submit] {
+            width: 100%;
+            padding: 12px; 
+            font-size: 20px;
+            background-color: #0088a9;
+            color: white;
+            border: none;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #bbb;
+            color: #0088a9;
+          }
+
+          input[type=toppage] {
+            width: 100%;
+            padding: 10px; 
+            font-size: 20px;
+            text-align: center;
+            background-color: #0088a9;
+            color: white;
+            border: none;
+          }
+          
+          input[type=toppage]:hover {
+            background-color: #bbb;
+            color: #0088a9;
+          }
+
+
+            /*BACT TO THE TOP BUTTON  */
+        </style>
+
+
+</head>
+<body>
+
+        <!--Header's HTML starts here -->
+
+
+        <header>
+            <div class="logo"><a href="http://127.0.0.1:5500/HomePage.html">L A R I S S A</a></div>
+        <nav>
+            <ul class="nav_links">
+              <li><a href="http://127.0.0.1:5500/AboutPage.html">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/HomePage.html">Headlines</a></li>
+                <li><a href="http://127.0.0.1:5500/newspage.html">News</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="http://127.0.0.1:5500/registerpage.html"><button>Register Now</button></a>
+        </header>
+            
+    
+        <!--Header's HTML ends here -->
+
+        
+        <!-- Newsletter starts here -->
+        
+        <form action="https://formsubmit.co/fusil.dawei@email.com" method="POST">
+          <div class="container1">
+            <h2>Join our Newsletter</h2><br>
+            <h4>Subscribe to our newsletter to receive <br> latest news about Fashion and Lifestyle !</h4>
+          </div>
+        
+          <div class="container" style="background-color:#bbb">
+            
+            <input type="text" placeholder="Email address" name="mail" required>
+            <input type="text" placeholder="Leave your message" name="message" required>
+            <!-- <label>
+              <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+            </label> -->
+          </div>
+        
+          <div class="container">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        
+
+        <!-- Newsletter ends here -->
+
+
+         <!--Footer's HTML starts here -->
+
+         <section class="footer">
+
+            <div class="socials">
+              <a href="https://www.facebook.com/hugrisse.pambo/about" class="fa fa-facebook"></a>
+              <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.cn/injobs/hp/" class="fa fa-linkedin"></a>
+              <a href="https://www.instagram.com/hugrisse_dev/" class="fa fa-instagram"></a>
+            </div>
+            
+
+            <ul class="list">
+              <li><a href="http://127.0.0.1:5500/AboutPage.html">About Us</a></li>
+              <li><a href="http://127.0.0.1:5500/HomePage.html">Headlines</a></li>
+              <li><a href="http://127.0.0.1:5500/newspage.html">News</a></li>
+            </ul>
+
+            <p>copyright@2021&ensp;<span>HUGRISSE Web Developer.&ensp;</span> All right reserved.</p><br>
+            
+          </section>
+
+          <div class="toppage">
+          <a href="http://127.0.0.1:5500/registerpage.html"><input type="toppage" value="Back To The Top"></a>
+          </div>
+            <!--Footer's HTML ends here -->
+
+
+</body>
+</html>
